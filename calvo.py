@@ -16,7 +16,7 @@ timers = {
 def format_time(td):
     hours, remainder = divmod(td.seconds, 3600)
     minutes, _ = divmod(remainder, 60)
-    return f"{hours:02}H {minutes:02}M"
+    return f"{hours:02}H{minutes:02}M"
 
 @bot.command()
 async def minato(ctx, custom_minutes: int = None):
@@ -60,5 +60,5 @@ async def on_ready():
         timer['original_fixed_time'] = timer['fixed_time']
     update_timers.start()
 
-discord_token = 'MTE0NDYxOTQwODA0MDM5ODg0OA.GWjGEU.pDBQoCOaPLbqDXD8ImPktaIf58rUVUweCGw_E4'
+discord_token = 'MTE0NTc5ODIzMTY1NDE0MTk3Mg.Gjk0Yo.G_OQb8_XMASZjsAH280zt9tZRHK8_0ZwCJds1E'
 bot.run(discord_token)
