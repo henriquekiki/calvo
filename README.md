@@ -7,6 +7,7 @@ O Cronômetro Calvo é um bot Discord que permite que você agende e acompanhe t
 # Comandos:
 
 O bot possui os seguintes comandos:
+
 "/minato" para exibir o tempo que falta para o boss nascer.
 
 "/minato [custom_minutes]"
